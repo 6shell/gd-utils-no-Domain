@@ -1,3 +1,8 @@
+部署参考
+```
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/6shell/gd-utils-no-Domain/master/gdutilsinstall.sh)"
+```
+
 # Google Drive 百宝箱
 
 > 不只是最快的 google drive 拷贝工具 [与其他工具的对比](./compare.md)
