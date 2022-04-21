@@ -6,7 +6,7 @@ color_end='\033[0m'
 
 echo -e "\n$color_yellow===== <<gdutils项目一件部署脚本要求及说明>> =====$color_end"
 echo -e "$color_yellow---------------[ change from v2.1 by oneking ]---------------$color_end"
-echo -e "$color_yellow 01.$color_end 本脚本是魔改的gdutils项目一键部署脚本;"
+echo -e "$color_yellow 01.$color_end 本脚本是魔改的gdutils项目一键部署脚本,仅供自己学习使用;"
 echo -e "$color_yellow 02.$color_end 脚本包括“TD盘VPS上查询转存部署”和“Telegram机器人部署”两部分"
 echo -e "$color_yellow 03.$color_end 本脚本适应CentOS/Debian/Ubuntu三种操作系统，自动识别、自动选择对应分支一键安装部署"
 echo -e "$color_yellow 04.$color_end 三步即可完成部署：上传脚本到VPS → 设置脚本执行权限 → 运行"
@@ -109,7 +109,7 @@ $cmd_install install nodejs -y
 #export PATH=$PATH:~/node/bin/npm
 
 $cmd_install_rpm_build
-git clone https://github.com/dissipator/gd-utils.git gd-utils && cd gd-utils
+git clone https://github.com/6shell/gd-utils-no-Domain.git gd-utils && cd gd-utils
 npm config set unsafe-perm=true
 npm install -g node-gyp 
 # 如果better-sqlite3有安装错误,报python 变量的错 设置python npm变量 如果不行直接加入系统的环境变量的path
@@ -181,7 +181,7 @@ pm2 start  index.js --node-args="--max-old-space-size=500"
 echo -e "$color_yellow----------------------------------------------------------$color_end"
 
 cd ~
-#rm -f gdutilsinstall.sh
+#rm -f gdutilsinstall.new.sh
 
 ###########################gdutils功能建议##################################
 # 本部分是对gdutils项目的建议，因为我主要用的是查询功能所以以下建议只涉及查询功能
