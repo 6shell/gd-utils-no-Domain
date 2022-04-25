@@ -170,7 +170,7 @@ cd ../
     sed -i "s/bot_token/$YOUR_BOT_TOKEN/g" ./gd-utils/config.js &&
     sed -i "s/your_tg_userid/$YOUR_TELEGRAM_ID/g" ./gd-utils/config.js &&
     sed -i "s/your_tg_username/$YOUR_TELEGRAM_NAME/g" ./gd-utils/config.js &&
-    sed -i "s/DEFAULT_TARGET = ''/DEFAULT_TARGET = '$YOUR_GOOGLE_TEAM_DRIVE_ID'/g" ./gd-utils/config.js
+    sed -i "s/your_target/$YOUR_GOOGLE_TEAM_DRIVE_ID/g" ./gd-utils/config.js
 echo -e "$color_yellow----------------------------------------------------------$color_end"
 
 echo -e "$color_yellow“进程守护程序pm2”开始安装......$color_end"
