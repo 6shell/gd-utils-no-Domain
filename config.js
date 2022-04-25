@@ -9,7 +9,7 @@ const PAGE_SIZE = 1000 // 每次网络请求读取目录下的文件数，数值
 const RETRY_LIMIT = 5 // 如果某次请求失败，允许其重试的最大次数
 const PARALLEL_LIMIT = 10 // 网络请求的并行数量，可根据网络环境调整
 
-const DEFAULT_TARGET = 'DEFAULT_TARGET' // 必填，拷贝默认目的地ID，如果不指定target，则会复制到此处，建议填写团队盘ID
+const DEFAULT_TARGET = 'your_target' // 必填，拷贝默认目的地ID，如果不指定target，则会复制到此处，建议填写团队盘ID
 
 const AUTH = { // 如果您拥有service account的json授权文件，可将其拷贝至 sa 目录中以代替 client_id/secret/refrest_token
   client_id: 'your_client_id',
